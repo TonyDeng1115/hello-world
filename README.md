@@ -21,3 +21,5 @@ unique  去掉多余的login_参数
 
 mdf_curd
 unique
+
+\\dc13gfsshare01.lab-rot.saas.sap.corp\gfs_volume
