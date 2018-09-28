@@ -26,7 +26,6 @@ unique
 
 
 branch2
-=======
 fix
 branch1
  master
