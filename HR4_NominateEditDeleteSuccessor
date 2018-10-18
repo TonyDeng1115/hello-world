@@ -1,0 +1,20 @@
+HR4_NominateEditDeleteSuccessor
+
+-j-84635,US-101516884,6071,US-101221897,4516 
+http://10.116.80.184:1080   good
+http://10.116.77.201:8080    bad
+
+07:16:33,405 ERROR [FBOrgChart] [10.116.77.169] [3129262]  [(null)] [SfPerfWalmart,CloneOfWalmartRBP,dc13perfload_SfPerfWalmart.,dbPool1,US-101375784,-j-84635,en_US] Not able to pipe the org chart xml back to client.
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+        at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:356)
+        at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:785)
+        at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:714)
+        at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:391)
+        at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:369)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:89)
+        at com.successfactors.orgchart.ui.fb.v3.FBOrgChart.process(FBOrgChart.java:204)
+        at com.successfactors.platform.ui.servlet.js.UpdateServlet$12.process(UpdateServlet.java:577)
+        at com.successfactors.platform.ui.servlet.js.UpdateServlet.continueProcess(UpdateServlet.java:3272)
+        at com.successfactors.platform.ui.servlet.BoilerPlateServlet.process(BoilerPlateServlet.java:1115)
+        at com.successfactors.platform.ui.servlet.BoilerPlateServlet.doGet(BoilerPlateServlet.jav
