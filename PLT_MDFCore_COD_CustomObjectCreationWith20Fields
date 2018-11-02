@@ -1,5 +1,6 @@
 https://cloudsearch-dc13.cld.ondemand.com/en-US/app/search/search?earliest=1541086432&latest=1541086852&q=search%20PLTXAFVolume%20adminnl%20host%3DDC13PERFSANITYCFAPP01%20source%3D%22%2Fapp%2Ftomcat%2Flogs%2Fserver.log%22%20exception&display.page.search.mode=smart&dispatch.sample_ratio=1&sid=1541139608.801785
 
+Line 90 error
 15:35:40,290 ERROR [SaveController] [155.56.251.10] [51609]  [(null)] [PLTXAFVolume,PLTXAFVolume,dc13perfsanity_PLTXAFVolume.,hanadbPool1,adminnl,adminnl,en_US] ???Saving of 1 GOObjectDefinition throwed a Exception???
 com.successfactors.genericobject.app.exception.MDFSQLException: com.sap.db.jdbc.exceptions.BatchUpdateExceptionSapDB: [301]: unique constraint violated(input position 43)
 	at com.successfactors.genericobject.blu.AbstractEntityWriteBLU.merge(AbstractEntityWriteBLU.java:75)
@@ -51,3 +52,7 @@ com.successfactors.genericobject.app.exception.MDFSQLException: com.sap.db.jdbc.
 	at sun.reflect.GeneratedMethodAccessor14345.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+	
+Line46 Error
+06:31:25,894 ERROR [ServiceCommandProcessorSpring] [155.56.251.10] [93572]  [(null)] [PLTXAFVolume,PLTXAFVolume,dc13perfsanity_PLTXAFVolume.,hanadbPool1,adminnl,adminnl,en_US] RuntimeException caught while executing service com.successfactors.genericobject.service.LoadObjectDefinitionLabels with error "com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: LOCALE_EN_US: line 1 col 74 (at pos 73)" and exception has threw up to the caller.
+	
